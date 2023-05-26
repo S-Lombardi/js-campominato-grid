@@ -1,10 +1,14 @@
 "use strict"
 
+function resetGrid(){
+    let container_grid = document.getElementById("container-grid");
+    container_grid.innerHTML = " ";
+}
+
 //DICHIARO FUNZIONE PER CREARE LA GRIGLIA
 function makeGrid(n){ 
-
-    resetGrid();
-
+    
+    
     for(let i=1 ; i<=n*n ; i++){
         
         //Creo elemento div 
@@ -31,7 +35,7 @@ function makeGrid(n){
             this.classList.add("click-blu");
             console.log(i)
         });
-            
+        
     }
     
 }
@@ -39,12 +43,22 @@ function makeGrid(n){
 //Recupero il pulsante del dom che al click genera la griglia
 let buttonPlay = document.getElementById("play");
 
+//inserisco la griglia 10x10 dentro all'
 buttonPlay.addEventListener("click", function(){
     
     makeGrid(10);
-
+    
 })
 
 
 
+//Recupero il pulsante del dom che al click genera la griglia
+let buttonReset = document.getElementById("reset");
+
+//inserisco la griglia 10x10 dentro all'
+buttonReset.addEventListener("click", function(){
+    
+    resetGrid();
+    
+})
 
