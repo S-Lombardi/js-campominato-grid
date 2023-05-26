@@ -52,10 +52,10 @@ buttonPlay.addEventListener("click", function(){
 
 
 
-//Recupero il pulsante del dom che al click genera la griglia
+//Recupero il pulsante del dom che resetta la griglia
 let buttonReset = document.getElementById("reset");
 
-//inserisco la griglia 10x10 dentro all'
+//inserisco la funzione reset al click del pulsante Reset
 buttonReset.addEventListener("click", function(){
     
     resetGrid();
