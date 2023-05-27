@@ -43,9 +43,8 @@ function makeGrid(n){
 //Recupero il pulsante del dom che al click genera la griglia
 let buttonPlay = document.getElementById("play");
 
-//inserisco la griglia 10x10 dentro all'
+//inserisco la griglia 10x10 dentro all'evento click del pulsante Play
 buttonPlay.addEventListener("click", function(){
-    
     makeGrid(10);
     
 })
