@@ -14,14 +14,14 @@ body{
 /* LAYOUT */
 .container{
     width: 80%;
-    min-height: 400px;
     margin: auto;
-    border: 1px dashed blue;
+    /* border: 1px dashed blue; */
 }
 
 .row{
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 header{
@@ -32,16 +32,30 @@ header{
 .col-50{
     width: calc(100% / 2 - 20);
     margin: 10px;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 /* FINE LAYOUT */
 
 
 /*  HEADER*/
 
-.content-header{
+.left-header{
+    font-size: 30px;
+}
+
+.right-header{
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+}
+#play{
+    font-size: 16px;
+    padding: 4px 15px 4px 15px;
+    border-radius: 20px;
+    border: 2px double black;
+}
+#play:hover{
+    background-color: rgb(190, 196, 194);
 }
 
 /* FINE HEADER*/
@@ -77,12 +91,12 @@ header{
 
 /* FOOTER */
 
-footer{
+/* footer{
     background-color: rgb(236, 236, 236);
     width: 100%;
     position: fixed;
     bottom: 0px;
-    
-}
+
+} */
 
 /* FINE FOOTER */

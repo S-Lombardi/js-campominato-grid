@@ -8,7 +8,8 @@ function resetGrid(){
 //DICHIARO FUNZIONE PER CREARE LA GRIGLIA
 function makeGrid(n){ 
     
-    
+    resetGrid()
+
     for(let i=1 ; i<=n*n ; i++){
         
         //Creo elemento div 
@@ -51,13 +52,13 @@ buttonPlay.addEventListener("click", function(){
 
 
 
-//Recupero il pulsante del dom che resetta la griglia
-let buttonReset = document.getElementById("reset");
+// //Recupero il pulsante del dom che resetta la griglia
+// let buttonReset = document.getElementById("reset");
 
-//inserisco la funzione reset al click del pulsante Reset
-buttonReset.addEventListener("click", function(){
+// //inserisco la funzione reset al click del pulsante Reset
+// buttonReset.addEventListener("click", function(){
     
-    resetGrid();
+//     resetGrid();
     
-})
+// })
 
