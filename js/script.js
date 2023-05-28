@@ -8,6 +8,7 @@ function resetGrid(){
 //DICHIARO FUNZIONE PER CREARE LA GRIGLIA
 function makeGrid(n){ 
     
+    
     resetGrid()
 
     for(let i=1 ; i<=n*n ; i++){
