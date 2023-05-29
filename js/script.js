@@ -1,5 +1,6 @@
 "use strict"
 
+//Dichiaro funzione per resetare la griglia
 function resetGrid(){
     let container_grid = document.getElementById("container-grid");
     container_grid.innerHTML = " ";
