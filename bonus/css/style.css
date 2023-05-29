@@ -14,7 +14,7 @@ body{
 
 /* LAYOUT */
 .container{
-    width: 80%;
+    width: 40vw;
     margin: auto;
     /* border: 1px dashed blue; */
 }
@@ -78,6 +78,7 @@ header{
 #container-grid{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .box{
     width: calc(100% / 10);
